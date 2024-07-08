@@ -10,7 +10,7 @@ import cors from "cors"
 dotenv.config();
 
 mongoose
-  .connect(process.env.MONGO)
+  .connect(process.env.MONGO_NEW)
   .then(() => {
     console.log("Connect to mongodb");
   })
