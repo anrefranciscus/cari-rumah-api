@@ -1,9 +1,9 @@
 import express from "express";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
-import userRoutes from "./routes/user.route.js";
-import authRoutes from "./routes/auth.route.js";
-import listingRoutes from "./routes/listing.route.js";
+import userRoutes from "../routes/user.route.js";
+import authRoutes from "../routes/auth.route.js";
+import listingRoutes from "../routes/listing.route.js";
 import cookieParser from "cookie-parser";
 import cors from "cors";
 import path from "path";
@@ -41,3 +41,7 @@ app.use((err, req, res, next) => {
     message,
   });
 });
+
+export default {
+ app 
+}
