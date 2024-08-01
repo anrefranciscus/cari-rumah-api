@@ -9,7 +9,6 @@ import cors from "cors";
 import path from "path";
 
 dotenv.config();
-
 mongoose
   .connect(process.env.MONGO_NEW)
   .then(() => {
